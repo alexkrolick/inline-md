@@ -3,7 +3,7 @@
 ```html
 <html>
 <head>
-  <script src="https://unpkg.com/inline-md/dist/index.js"></script>
+  <script src="https://unpkg.com/inline-md@latest/dist/index.js"></script>
 </head>
 
 <body>
