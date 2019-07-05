@@ -14,6 +14,6 @@
     "prepublishOnly": "webpack -p"
   },
   "source": "index.js",
-  "unpkg": "dist/inline-md.umd.js",
+  "unpkg": "dist/index.js",
   "version": "1.0.2"
 }
