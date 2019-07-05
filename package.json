@@ -1,0 +1,19 @@
+{
+  "name": "inline-md",
+  "author": "Alex Krolick",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "marked": "^0.6.3"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "prepublishOnly": "webpack -p"
+  },
+  "source": "index.js",
+  "unpkg": "dist/inline-md.umd.js",
+  "version": "1.0.0"
+}
