@@ -14,7 +14,7 @@
     "marked": "^0.6.3"
   },
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack",
     "prepublishOnly": "webpack -p"
   },
   "source": "index.js",
