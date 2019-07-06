@@ -33,7 +33,10 @@
 <html>
 ```
 
-Note: both scripts immediately parse the DOM and are meant to be used standalone without additional JS. Pull Request welcome to refactor the code to export side-effect-free versions.
+## Possible Issues
+
+- Both scripts immediately parse the DOM and are meant to be used standalone without additional JS. Pull Request welcome to refactor the code to export side-effect-free versions.
+- Code is written with ES2015+ syntax that may not work without polyfills in older browsers like IE11
 
 ## Alternatives
 
