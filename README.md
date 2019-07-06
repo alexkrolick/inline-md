@@ -18,9 +18,11 @@
   </div>
   
   <markdown-text>
+
   # Hello Web Component
 
   The `markdown-text` webcomponent works too
+
   </markdown-text>
 
 </body>
