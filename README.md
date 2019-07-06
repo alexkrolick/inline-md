@@ -1,5 +1,9 @@
 # inline-md
 
+![npm bundle size](https://img.shields.io/bundlephobia/min/inline-md.svg)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/inline-md.svg)
+![NPM](https://img.shields.io/npm/l/inline-md.svg)
+
 ```html
 <html>
 <head>
