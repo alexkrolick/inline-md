@@ -2,6 +2,10 @@
   "name": "inline-md",
   "author": "Alex Krolick",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexkrolick/inline-md.git"
+  },
   "devDependencies": {
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5"
