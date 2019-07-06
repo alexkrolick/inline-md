@@ -1,4 +1,5 @@
 import marked from 'marked'
+import redent from 'redent'
 
 class MarkdownText extends HTMLElement {
   connectedCallback() {
@@ -18,7 +19,7 @@ class MarkdownText extends HTMLElement {
     const inputMarkdown = this.innerHTML;
     const shadow = this.attachShadow({mode: 'open'});
     const parsedHtmlContainer = document.createElement('div')
-    parsedHtmlContainer.innerHTML = marked(inputMarkdown)
+    parsedHtmlContainer.innerHTML = marked(redent(inputMarkdown))
     shadow.appendChild(parsedHtmlContainer)
   }
 }
