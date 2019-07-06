@@ -2,6 +2,13 @@ import marked from 'marked'
 import redent from 'redent'
 
 class MarkdownText extends HTMLElement {
+  constructor() {
+    super()
+    const shadow = this.attachShadow({mode: 'open'});
+    this.parsedHtmlContainer = document.createElement('div');
+    shadow.appendChild(this.parsedHtmlContainer)
+  }
+
   connectedCallback() {
     const inputMarkdown = this.innerHTML;
     // If the script tag executes before the document has finished mounting,
@@ -25,10 +32,7 @@ class MarkdownText extends HTMLElement {
 
   parseHTML() {
     const inputMarkdown = this.innerHTML;
-    const shadow = this.attachShadow({mode: 'open'});
-    const parsedHtmlContainer = document.createElement('div')
-    parsedHtmlContainer.innerHTML = marked(redent(inputMarkdown))
-    shadow.appendChild(parsedHtmlContainer)
+    this.parsedHtmlContainer.innerHTML = marked(redent(inputMarkdown))
   }
 }
 
