@@ -15,6 +15,14 @@ class MarkdownText extends HTMLElement {
     }
   }
 
+  attributeChangedCallback() {
+    this.parseHTML()
+  }
+
+  adoptedCallback() {
+    this.parseHTML()
+  }
+
   parseHTML() {
     const inputMarkdown = this.innerHTML;
     const shadow = this.attachShadow({mode: 'open'});
