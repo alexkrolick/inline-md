@@ -28,3 +28,11 @@
 ```
 
 Note: both scripts immediately parse the DOM and are meant to be used standalone without additional JS. Pull Request welcome to refactor the code to export side-effect-free versions.
+
+## Alternatives
+
+- https://github.com/vanillawc/wc-markdown
+
+## License
+
+MIT
