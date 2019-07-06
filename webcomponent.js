@@ -32,7 +32,7 @@ class MarkdownText extends HTMLElement {
 
   parseHTML() {
     const inputMarkdown = this.innerHTML;
-    this.parsedHtmlContainer.innerHTML = marked(redent(inputMarkdown))
+    this.parsedHtmlContainer.innerHTML = marked(redent(inputMarkdown).replace(/&gt;+/g, '>'))
   }
 }
 

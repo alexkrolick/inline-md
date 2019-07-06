@@ -4,7 +4,7 @@ import redent from 'redent'
 function parseMarkdownNodes() {
   for (var markdownElement of document.querySelectorAll('[data-markdown]')) {
     var mdText = markdownElement.innerHTML;
-    markdownElement.innerHTML = marked(redent(mdText));
+    markdownElement.innerHTML = marked(redent(mdText).replace(/&gt;+/g, '>'));
   }
 }
 
