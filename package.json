@@ -11,7 +11,7 @@
     "webpack-cli": "^3.3.5"
   },
   "dependencies": {
-    "marked": "^0.6.3",
+    "marked": "^0.7.0",
     "redent": "^3.0.0"
   },
   "scripts": {
